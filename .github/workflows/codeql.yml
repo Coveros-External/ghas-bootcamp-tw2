@@ -65,6 +65,14 @@ jobs:
     - run: |
        echo "java version"
        java --version
+    - name: Set Up Java JDK
+      uses: actions/setup-java@v3
+      with:
+        java-version: 18
+        distribution: 'oracle'
+    - run: |
+       echo "java version"
+       java --version
     - name: Checkout repository
       uses: actions/checkout@v4
 

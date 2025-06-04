@@ -66,6 +66,7 @@ jobs:
        echo "java version"
        java --version
     - name: Set Up Java JDK
+      if: matrix.language == 'java-kotlin'
       uses: actions/setup-java@v3
       with:
         java-version: 18

@@ -25,3 +25,16 @@ updates:
         dependency-type: "production"
       development-dependencies:
         dependency-type: "development"
+  #pip
+  - package-ecosystem: "pip"
+    directory: "/authn-service"
+    schedule:
+      interval: "daily"
+    labels:
+      - "triage-required"
+    assignees:
+      - "timothyawillis
+    reviewers:
+      - "timothyawillis"
+    commit-message:
+      prefix: "pip"
